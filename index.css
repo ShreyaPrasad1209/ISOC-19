@@ -87,26 +87,102 @@ sup{
     color: white;
 }
 
-.card {
-    background: #fff;
-    border-radius: 2px;
-    display: inline-block;
-    height: 300px;
-    margin-left: 200px;
+
+
+
+.card-1{
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    width: 250px;
+    height: 350px;
+    background: black;
+    margin-left: 900px;
     margin-top: 100px;
-    /* position: relative; */
-    width: 200px;
-  }
+    float: left;
+    position: relative;
+} 
 
-.card-1 {
+.cards{
+    background: #A22C29;
+    width: 50%;
+    float: right;
+}
+
+.card-2{
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    margin-right: 150px;
-    /* float: right; */
+    width: 250px;
+    height: 350px;
+    background:blueviolet;
+    margin-left: 1200px;
+    margin-top: 100px;
+    position: relative;
+} 
+
+.main{
+    background: black;
+    width: 50%;
+    float: left;
+    
+}
+
+.main img {
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgb(0,212,255);
+    background: linear-gradient(36deg, rgba(0,212,255,1) 0%, rgba(11,11,143,1) 64%);
   }
-.card-2 {
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    margin-right: 150px;
-
- }
- 
-
+  
+  .w3-container {
+      height: 100px;
+  }
+  
+  * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* Float four columns side by side */
+    .column {
+      float: left;
+      width: 25%;
+      padding: 0 10px;
+      margin-top: 20px;
+    }
+    
+    /* Remove extra left and right margins, due to padding in columns */
+    .row {margin: 0 -5px;}
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+      padding: 16px;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
+    
+    /* Responsive columns - one column layout (vertical) on small screens */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+  
