@@ -1,6 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    overflow-x: hidden;
 }
 
 .header {
@@ -9,8 +13,68 @@
     top: 0;
     left: 0;
     z-index: 1;
-    height: 80px;
+    height: 83px;
+    box-shadow: none;
+    background: #fff;
+    box-shadow: -4px 2px 16px -9px;
 }
+
+.nav-right{
+    display: block;
+    float: right;
+    list-style: none;
+    margin: auto;
+    text-align: center;
+    width: 30%;
+    position: relative;
+    top: 27%;
+
+}
+
+.right-nav-list{
+    list-style: none;
+    display: inline-flex;
+    margin-right: 40px;
+    margin-top: 12px;
+}
+.right-nav-list > a {
+    padding-left: 20px; 
+    background: #BF1627;
+    margin-left: 10px;
+    height: 30px;
+    width: 90px;
+    padding-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+    .right-nav-list > #fb {
+        padding-left: 20px; 
+        background: #4267b2;
+        margin-left: 10px;
+        height: 30px;
+        width: 90px;
+        padding-top: 5px;
+        font-family: 'Montserrat', sans-serif;
+
+}
+.right-nav-list > a:nth-child(1){
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-right: 10px;
+}
+.right-nav-list > a:nth-child(2){
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-right: 16px;
+
+}
+.right-nav-list > a >li> i{
+    color: #fff;
+    padding-right: 3px;
+}
+
+
 
 .header .nav-bar {
     padding: 0 50px;
@@ -18,6 +82,10 @@
     background: white;
     position: relative;
     line-height: 40px;
+    float: left;
+    box-shadow: none;
+    width: 70%;
+
 }
 
 .header .nav-link {
@@ -29,31 +97,26 @@
     font-weight: 700;
     text-decoration: none;
     margin-left: 20px;
-    /* margin-top: 0px; */
+    margin-top: 0px;
 }
 
-/* .header .nav-bar .nav-link:hover {
-    colo: #202020;
-} */
+
+
+
+
 
 .shadow {
     box-shadow: 10px 10px 5px #666666;
 }
  
-.pull-right {
-  float: right;
-  margin-top: 100px;
-} 
+
 
 .header img{
     max-height: 34.2px;
     max-width: none;
-    margin-top: 10px;
+    margin-top: 23px;
     margin-left: 100px;
     
-}
-i{
-    color: black;
 }
 
 sup{
@@ -62,15 +125,21 @@ sup{
     font-family: 'Rubik', sans-serif;
     font-size: 9px;
 }
-
-.iosd{
+.media{
+    width: 25%;
+    float: right;
+    position: absolute;
+    margin-left: 60%;
+    margin-top: 0%;
+}
+ .iosd{
     background: #A22C29;
     color: white;
     font-family: 'Open Sans', sans-serif;
     width: 80px;
     height: 30px;
-    float: left; 
-    margin-right: 100px;
+    float:right;
+    margin-left: 50px;
     padding-left: 2px;
     border-radius: 15px 0px 0px 15px; 
 }
@@ -80,33 +149,25 @@ sup{
     float: right;
     width: 80px;
     height:30px;
+    margin-left: 300px;
+    margin-top: 0px;
     border-radius: 0px 15px 15px 0px; 
-}
+} 
 
-.fab-fa-facebook-f{
-    color: white;
-}
-
-.main ::after{
+.main-page ::after{
     content: "";
     display: table;
     clear: both;
 }
 
 
-
-
-
 .card-1{
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     width: 250px;
     height: 350px;
-    background: black;
-    margin-left: 900px;
-    margin-top: 100px;
-    float: left;
-    
-    
+    margin-left: 100px;
+    margin-top: 140px;
+    float: left;   
 } 
 
 
@@ -115,43 +176,47 @@ sup{
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     width: 250px;
     height: 350px;
-    background:blueviolet;
-    margin-left: 1200px;
-    margin-top: 100px;
-    
+     margin-left: 400px; 
+    margin-top: 140px;
    
 } 
 
 .cards{
-    /* background: #A22C29; */
+    
    float: right;
    width: 50%;
    padding: 10px;
-   height: 700px;
+   height: 650px;
+   margin: 0 -5px;
  }
 
+ .cards img{
+    width: 250px;
+    height: 350px;
+ }
 .home{
 
   float: left;
   width: 50%;
   padding: 10px;
-  height: 700px;
+  height: 650px;
     
 }
 
 .home img {
-    margin-left: 60px;
-    margin-top: 150px;
+    margin-left: 35px;
+    margin-top: 110px;
     width: 180px;
     height: 100px;
 }
 
-.home p{
-    font-family: 'PT Sans', sans-serif;
-    color: #808080;
-    font-size: 23px;
-    margin-left: 13px;
-    margin-top: 15px;
+#caption {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size: 22px;
+    margin-left: 45px;
+    margin-top: 25px;
+    font-weight: 590;
 }
 
 .card-3 {
@@ -159,47 +224,61 @@ sup{
     width: 250px;
     height: 100px;
     margin-top: 20px;
-    margin-left: 25px;
+    margin-left: 45px;
     float: left;
+    overflow: hidden;
+    padding: 10px;
   }
 
   .card-4 {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    width: 180px;
+    width: 160px;
     height: 100px;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 70px;
     float: inherit;
+    overflow: hidden;
+    padding: 10px;
   }
 
   .card-5 {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    width: 180px;
+    width: 150px;
     height: 100px;
     margin-top: 20px;
     margin-left: 20px;
     float: right;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 0px;
   }
 
 #para{
     margin-top: 200px;
-    font-family: 'Rubik', sans-serif; 
-    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif; 
+    margin-left: 40px;
     margin-right: 20px;
     height: 50px;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .box-para{
-    font-size: 2px;
-    border: 2px solid black;
+    font-size: 16px;
+    color: #808080;
     margin-bottom: 20px;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+    padding-left: 8px; 
     
 }
 
 .number{
     color: #17A8E1;
-    font-size: 20px;
+    font-size: 38px;
+    font-weight: 700;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 
@@ -228,29 +307,24 @@ sup{
     margin-top: 20px;
   }
   
-  /* Remove extra left and right margins, due to padding in columns */
-  .row {margin: 0 -5px;}
-  
-  /* Clear floats after the columns */
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
   
-  /* Style the counter cards */
+ 
   .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    /*  */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
     width: 300px;
     height: 100px;
     padding: 10px;
     margin-left: 10px;
     text-align: center;
     background-color: #f1f1f1;
+    overflow: hidden;
   }
   
-  /* Responsive columns - one column layout (vertical) on small screens */
   @media screen and (max-width: 600px) {
     .column {
       width: 100%;
@@ -263,31 +337,67 @@ sup{
      width: 90px;
      height: 70px;
      float: left; 
-     border: 2px solid blue;
+     
  }
 
  h5{
      padding-top: 1px;
-     border: 3px solid black;
      height: 10px;
      width: 50%;
-     float: right;
-     font-size: 10px;
-     font-weight: 500;
+     float: left;
+     margin-left: -15px;
+     font-size: 16px;
+     font-weight: 600;
+     font-family: 'Source Sans Pro', sans-serif;
  }
 
  .card p{
-     border: 2px solid black;
-     width: 100px;
-    height: 50px;
-    font-size: 5px;
+     
+    width: 185px;
+    height: 40px;
+    font-size: 10px;
     color: #808080;
     float: right;
+    margin-top: 20px;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.chat{
+
+   background: linear-gradient(36deg, rgba(0,212,255,1) 0%, rgba(11,11,143,1) 64%);
+   position:absolute;
+   bottom:0;
+   width:20%;
+   height:30px;
+   float:right;
+   right: 0;
+   margin-right: 200px;
+   border-top-right-radius: 30px;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+}
+.chat > p {
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+}
+.span-right {
+    position: relative;
+    top: -29px;
+    height: 18px;
+    width: 20px;
+    background: #0ed00e;
+    float: right;
+    border-bottom-left-radius: 60px;
+    z-index: 99;
+    border-top-right-radius: 73px;
+    right: 6px;
+}
+    
     
 
- }
-
-  
- 
   
  
